@@ -1,26 +1,16 @@
 //your parameter variables go here!
-  let headX = 75;
-  let headY = 75;
-  let snoutY = headY - 8; // link to snout location Y
-  let eyeY = headY - 15;
-
   let headsize = 83;
   let snoutsize = 36;
   let earsize = 85;
   let eyesize = 90; 
   let nostrilSize = 8;
-
-  angry = true;
-
-  // Nostril - snout
-  let leftNostrilX = headX - snoutsize / 2.8;
-  let rightNostrilX = headX + snoutsize / 2.8;
-  let nostrilY = snoutY + snoutsize / 3.2;
+  let watermelonSize = 80;
+  watermelon = true;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GLIDE_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 175;
@@ -29,7 +19,8 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  if (angry == true){
+
+  if (watermelon == false){
     background(187, 63, 63)
   }
   else{
@@ -39,8 +30,26 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
+  let headX = 75;
+  let headY = 75;
+  let snoutY = headY - 8; // link to snout location Y
+  let eyeY = headY - 15;
+  // Nostril - snout
+  let leftNostrilX = headX - snoutsize / 2.8;
+  let rightNostrilX = headX + snoutsize / 2.8;
+  let nostrilY = snoutY + snoutsize / 3.2;
+  
+  if (watermelon == true){
+  // Draw watermelon slice
+  fill(35, 140, 30); // Green
+  arc(headX + 40, headY + 55, watermelonSize, watermelonSize, PI - 20, -195, PIE);
+  
+  fill(255, 30, 0); // Red
+  arc(headX + 40, headY + 55, watermelonSize-10, watermelonSize-10, PI - 20, -195, PIE);
+  }
+
   // Draw ears
-  if (angry == true){
+  if (watermelon == false){
     fill(160, 80, 60)
   }
   else{
@@ -50,7 +59,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(headX + 25, headY - 35, earsize / 4, earsize / 3.2); // Right ear
 
   // Draw capybara head
-  if (angry == true){
+  if (watermelon == false){
     fill(160, 60, 60)
   }
   else{  fill(160, 120, 90); // Light brown
@@ -65,7 +74,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(headX + 34, eyeY, eyesize / 8.2, eyesize / 7.5); // Right eye
 
   // Eyelids
-  if (angry == true){
+  if (watermelon == false){
     fill(100, 40, 40)
   }
   else{
@@ -79,7 +88,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   // Draw snout
   stroke(30);
-  if (angry == true){
+  if (watermelon == false){
     fill(160, 80, 60)
   }
   else{
@@ -114,9 +123,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   line(headX + 25, headY + 20, headX + 45, headY + 25);
   line(headX + 25, headY + 25, headX + 45, headY + 35);
 
-  // angry eyebrows
+  // watermelon eyebrows
   stroke(40);
-  if (angry == true){
+  if (watermelon == false){
     strokeWeight(2)
     line(headX - 40, headY -30, headX - 25, headY - 20)
     line(headX + 40, headY -30, headX + 25, headY - 20)

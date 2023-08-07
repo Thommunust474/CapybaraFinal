@@ -4,18 +4,220 @@ The bellow is just an example, feel free to disregard this documents contents.
 
 Your final settings.txt will look something like this when you are finished:
 
+
 /////////////////////////////////
 
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 85;
+  let eyesize = 90; 
+  let nostrilSize = 8;
+  let watermelonSize = 80;
+  watermelon = true;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 175;
+  pWallpaper.grid_settings.cell_height = 175;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 2:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 120;
+  let eyesize = 90; 
+  let nostrilSize = 4;
+  let watermelonSize = 30;
+  watermelon = true;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 150;
+  pWallpaper.grid_settings.cell_height = 150;
+  pWallpaper.grid_settings.row_offset  = 25;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+  let headsize = 90;
+  let snoutsize = 40;
+  let earsize = 120;
+  let eyesize = 75; 
+  let nostrilSize = 12;
+  let watermelonSize = 90;
+  watermelon = true;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 150;
+  pWallpaper.grid_settings.cell_height = 125;
+  pWallpaper.grid_settings.row_offset  = 65;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 85;
+  let eyesize = 90; 
+  let nostrilSize = 8;
+  let watermelonSize = 80;
+  watermelon = false;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 150;
+  pWallpaper.grid_settings.cell_height = 150;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 45;
+  let earsize = 85;
+  let eyesize = 90; 
+  let nostrilSize = 16;
+  let watermelonSize = 80;
+  watermelon = false;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 115;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+//your parameter variables go here!
+  let headsize = 90;
+  let snoutsize = 40;
+  let earsize = 120;
+  let eyesize = 96; 
+  let nostrilSize = 10;
+  let watermelonSize = 240;
+  watermelon = true;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 125;
+  pWallpaper.grid_settings.cell_height = 175;
+  pWallpaper.grid_settings.row_offset  = 125;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 90;
+  let eyesize = 100; 
+  let nostrilSize = 16;
+  let watermelonSize = 100;
+  watermelon = false;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 80;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 200;
+  let eyesize = 90; 
+  let nostrilSize = 2;
+  let watermelonSize = 50;
+  watermelon = true;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 70;
+  pWallpaper.grid_settings.cell_height = 70;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+  let headsize = 83;
+  let snoutsize = 36;
+  let earsize = 90;
+  let eyesize = 90; 
+  let nostrilSize = 8;
+  let watermelonSize = 100;
+  watermelon = true;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -26,28 +228,4 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 50;
-}
-
-/////////////////////////////////
-
-Wallpaper 2:
-
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
-
-function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
-
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
 }
