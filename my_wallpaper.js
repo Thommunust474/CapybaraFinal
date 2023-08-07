@@ -10,7 +10,7 @@
   let eyesize = 90; 
   let nostrilSize = 8;
 
-  angry = false;
+  angry = true;
 
   // Nostril - snout
   let leftNostrilX = headX - snoutsize / 2.8;
